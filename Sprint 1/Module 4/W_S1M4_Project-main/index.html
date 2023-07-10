@@ -1,0 +1,85 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+<!DOCTYPE html>
+<head>
+  <title>My Web Page</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Web Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <style>
+      
+    .small-image {
+      width: 200px;
+      height: auto;
+    }
+
+    </style>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <img src="IMG_2397.jpg" alt="My Crying Son" class="small-image">
+      <p>I am currently studying in the Bloomtech course and this is a picture of my son :)</p>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Contact Me</h2>
+      <p>You can reach me at <a href="mailto:tyler@example.com">tyler@example.com</a>.</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </footer>
+  <p>&copy; 2023 My Web Page. All rights reserved.</p>
+</body>
+</html>
